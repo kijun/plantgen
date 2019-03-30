@@ -1,0 +1,10 @@
+S -> SS | SS S
+SS -> NP VP Period
+PP -> P NP
+NP -> Det N
+VP -> V NP
+Det -> 'a' | 'the'
+N -> 'babo' | 'cat'
+V -> 'chased' | 'sat'
+P -> 'on' | 'in'
+Period -> '.'

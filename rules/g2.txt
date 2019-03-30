@@ -1,0 +1,12 @@
+S -> SS | SS S
+SS -> NP VP Period
+PP -> P NP
+NP -> Det N
+VP -> V NP
+Det -> 'a' | 'the'
+N -> 'days' | 'wind' | 'ways' | 'balloon' | 'bank' | 'railroad'
+V -> 'get' | 'be'
+P -> 'on' | 'in'
+CON -> 'and'
+Period -> '.'
+

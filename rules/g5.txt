@@ -1,0 +1,48 @@
+S -> SS
+SS -> NP VP Period
+# Noun Phrase http://babelnet.sbg.ac.at/themepark/grammar/phrases.htm
+NP -> NounHead
+NP -> Predet Det Postdet Premod NounHead Postmod
+
+Predet -> 'all' | 'not quite all'
+
+# Determiner
+Det -> 'the' | 'a'
+
+# Postdeterminer
+Postdet -> 'many' | 'very many'
+
+# Premodifier
+Premod -> Adj
+
+# Head
+NounHead -> 'days' | 'wind' | 'ways' | 'balloon' | 'bank' | 'railroad'
+
+# Postmodifier
+Postmod -> Preposition Det NP
+
+# Verb Phrase https://faculty.washington.edu/wassink/LING200/lect14_syntax2.pdf
+VP -> VerbHead
+VP -> VerbHead NP
+VP -> VerbHead NP Adv
+VP -> VerbHead NP Postmod
+VP -> VerbHead Postmod Adv
+
+VerbHead -> 'could get' | 'could be' | 'tried' | 'fixed' | 'bought'
+
+# Adjective https://examples.yourdictionary.com/examples-of-adjectives.html
+Adj -> 'bitter' | 'boiling' | 'dry' | 'faint' | 'light' | 'tall'
+
+# Preposition
+Preposition -> 'on' | 'in' | 'with'
+
+# Adverb
+Adv -> 'slowly' | 'gravely'
+
+
+# N -> 'days' | 'wind' | 'ways' | 'balloon' | 'bank' | 'railroad'
+V -> 'could get' | 'could be'
+CON -> 'and'
+Period -> '.'
+
+
