@@ -1,0 +1,76 @@
+S -> SS
+# SS -> NP VP
+SS -> SentHead | SentHead CON SS
+SentHead -> SP VP
+# Subject Phrase http://babelnet.sbg.ac.at/themepark/grammar/phrases.htm
+SP -> SubjHeadPhrase
+#SP -> DetPhrase SubjHeadPhrase
+
+# Noun Phrase http://babelnet.sbg.ac.at/themepark/grammar/phrases.htm
+NP -> NounHeadPhrase
+NP -> DetPhrase NounHeadPhrase
+
+# NounHeadPhrase
+SubjHeadPhrase -> SubjHead
+#SubjHeadPhrase -> Premod SubjHead
+SubjHeadPhrase -> SubjHead Postmod
+#SubjHeadPhrase -> Premod SubjHead Postmod
+
+# NounHeadPhrase
+NounHeadPhrase -> NounHead
+#NounHeadPhrase -> Premod NounHead
+NounHeadPhrase -> NounHead Postmod
+#NounHeadPhrase -> Premod NounHead Postmod
+
+# Determiner Phase
+DetPhrase -> Det
+DetPhrase -> Predet Det
+DetPhrase -> Det Postdet
+DetPhrase -> Predet Det Postdet
+
+Predet -> 'all'
+#| 'not quite all'
+
+# Determiner
+Det -> 'the'
+#| 'a'
+
+# Postdeterminer
+Postdet -> 'many'
+
+# Premodifier
+Premod -> Adj
+
+# Head
+SubjHead -> 'I' | 'And I'
+NounHead -> 'typings' | 'designs' | 'songs' | 'space needles' | 'colors' | 'houses' | 'flowers' | 'people'
+
+# Postmodifier
+Postmod -> Preposition Det NP
+
+# Verb Phrase https://faculty.washington.edu/wassink/LING200/lect14_syntax2.pdf
+VP -> VerbHead
+VP -> VerbHead NP
+VP -> VerbHead NP Adv
+VP -> VerbHead NP Postmod
+VP -> VerbHead Postmod Adv
+VP -> VerbHead NounHeadPhrase
+VP -> VerbHead NounHeadPhrase Adv
+VP -> VerbHead NounHeadPhrase Postmod
+VP -> VerbHead Postmod Adv
+
+VerbHead -> 'could get' | 'type' | 'make' | 'typed' | 'draw' | 'record' | 'have'
+
+# Adjective https://examples.yourdictionary.com/examples-of-adjectives.html
+Adj -> 'dry' | 'faint'
+
+# Preposition
+Preposition -> 'on' | 'with'
+
+# Adverb
+Adv -> 'slowly'
+V -> 'could get' | 'could be'
+CON -> 'and'
+Period -> '.'
+
+
